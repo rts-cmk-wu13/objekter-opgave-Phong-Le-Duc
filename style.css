@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------RESET END---------------- */
+body {
+    background-color: rgb(223, 228, 230); 
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns:
+        [fullw-start]6rem [content-start]1fr[content-end] 6rem[fullw-end];
+        position: relative;
+        background-color: rgb(223, 228, 230);
+}
+
+
+
+
+main
+ {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: fullw;
+   }
+header,
+footer {
+    display: grid;
+    grid-template-columns: subgrid;
+     grid-column: content;
+}
+
+
+header>*,
+main>*
+{
+    display: grid;
+    grid-template-columns: subgrid;
+     grid-column: content;
+
+}
+
+.hero-img {
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+    margin-inline: auto;
+    position: relative;
+}
+
+
+.hero-info {
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 15rem;
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    padding: 0.5rem;
+}
+
+
+.header-nav {
+    background-color: rgba(197, 235, 221, 0.5);
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    top: 2rem;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    /* right: 5%; */
+}
+
+.left-icon, 
+.right-icon {
+background-color: rgb(164, 164, 229);
+width: 2rem;
+height: 2rem;
+
+}
+
+.hero-info__btn {
+    background-color: red;
+    gap: 0.5rem;
+    display: flex;
+    width: 8rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+    margin-left: 10%;
+
+}
+
+.hero-info__btn img {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+/* --------SERVICES---------- */
+
+.services {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1rem;
+    margin-top: 10rem;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.service-article {
+
+}
+
+.service-article img {
+width: 10rem;
+height: 5rem;
+}
+
+
+/* ----------FACILITIES----------- */
+
+.facilities h2 {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.facilities-container {
+   
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 1rem;
+}
+
+.facilities-article img {
+width: 1rem;
+height: 1rem;
+}
+
+
+/* ----------SITES-------------- */
+.sites {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.sites-container img {
+width: 1rem;
+height: 1rem;
+}
+
+.sites-container a {
+    padding: 1rem;
+    background-color: red;
+}
+
+
+/*---------- ADVANTAGES--------- */
+
+.advantages h2 {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.advantages-container  {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 1rem;
+}
+
+.advantages-container img {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* --------FOOTER------- */
+.footer {
+   
+}
+
+.footer-container {
+    background-color: rgb(207, 199, 188);
+    margin-top: 8rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns:   1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-list li {
+    list-style: none;
+    margin: 2px;
+}
+
+.footer-list li:first-child {
+    font-weight: bold;
+}
+
+.text-large {
+    font-size: 1.5rem;
+}
+
+
+.footer-bottom {
+    background-color: rgb(207, 199, 188);
+    height: 2px;
+    border-top: 2px solid black;
+  
+    
+}
+
+
+.all_rights {
+    background-color: rgb(207, 199, 188);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+}
+
+.all_rights ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+
+
+.bottom-nav li a {
+    
+    text-decoration: none;
+   
+}
